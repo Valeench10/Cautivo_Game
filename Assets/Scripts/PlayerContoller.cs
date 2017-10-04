@@ -7,6 +7,13 @@ public class PlayerContoller : MonoBehaviour {
     public float movementSpeed = 10;
     public float rotationSpeed = 60;
 
+    private Rigidbody rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
     void Update () {
 
         float horizontal = Input.GetAxis("Horizontal");
