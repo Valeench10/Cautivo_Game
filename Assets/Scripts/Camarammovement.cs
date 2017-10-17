@@ -25,9 +25,9 @@ public class Camarammovement : MonoBehaviour {
         Vector3 abovePos = player.position + Vector3.up * relCameraPosMag;
         Vector3[] checkPoints = new Vector3[5];
         checkPoints[0] = standardPos;
-        checkPoints[1] = Vector3.Lerp(standardPos, abovePos, 0.5f);
-        checkPoints[2] = Vector3.Lerp(standardPos, abovePos, 0.75f);
-        checkPoints[3] = Vector3.Lerp(standardPos, abovePos, 1f);
+        checkPoints[1] = Vector3.Lerp(standardPos, abovePos, 0.25f);
+        checkPoints[2] = Vector3.Lerp(standardPos, abovePos, 0.5f);
+        checkPoints[3] = Vector3.Lerp(standardPos, abovePos, 0.75f);
         checkPoints[4] = abovePos;
 
         for (int i = 0; i < checkPoints.Length; i++)
